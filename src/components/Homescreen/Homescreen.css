@@ -1,0 +1,17 @@
+.homeScreen {
+  width: 100%;
+  min-width: 300px;
+}
+.row__container {
+  overflow: scroll;
+  height: 700px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  position: "relative";
+  z-index: 5;
+  top: 0;
+  transform: translateY(-100px);
+}
+.row__container::-webkit-scrollbar {
+  display: none;
+}

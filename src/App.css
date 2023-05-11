@@ -1,0 +1,11 @@
+.app{
+    background-color: #111;
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+}
+.app__container{
+    max-width: 1900px;
+    margin:auto;
+    height: 100%;
+}

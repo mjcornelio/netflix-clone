@@ -1,0 +1,446 @@
+.loginScreen{
+    background-color: #111;
+    color: #fff;
+    position: relative;
+    font-size: 16px;
+    min-width: 400px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.loginScreen_nav{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+@media(min-width:1400px){
+    .loginScreen_nav{
+        position: relative;
+        width:1400px;
+    }
+}
+.loginScreen_logo{
+    width: 110px;
+} 
+.loginScreen_signIn{
+    cursor: pointer;
+    font-size: 0.8em;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 5px;
+}
+
+.loginScreen_header{
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/8459cea4-79ab-4f27-9ef0-a7c92a30a9bb/574df980-9fb0-4924-b13b-7ef3a1bf3547/PH-en-20220411-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.loginScreen_gradient{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+    border-bottom: 10px solid #222222;
+}
+.loginScreen_body{
+    z-index: 1;
+    width: 90%;
+    text-align: center;
+}
+.loginScreen_body >h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.2em;
+}
+.loginScreen_body >h2{
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+.loginScreen_body >h3{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 20px; 
+    padding: 0 20px;
+}
+.loginScreen_input {
+    margin-top: 40px;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.loginScreen_input input{
+    
+    outline: 0;
+    border: none;
+    padding: 10px ;
+    width: 70%;
+    height: 60px;
+}
+
+.loginScreen_input button{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #e50914;
+    color: #fff;
+    
+}
+main,
+footer{
+    display: flex;
+    justify-content: center;
+
+}
+.article_container{
+    width: 100vw;
+}
+.card_story_container{
+    width: 100%;
+    border-bottom: 10px solid #222222;
+}
+.card_story{
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+}
+.card_text h1{
+   font-size: 3rem;
+   font-weight: 600;
+   margin-bottom: 10px;
+
+}
+.card_text h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.monitor{
+    width: 90%;
+    z-index: 1;
+}
+.card_story_animation{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_story_animation video{
+    width: 69%;
+    position: absolute;
+
+}
+.phone{
+    position: relative;
+}
+.download{
+    position: absolute;
+    bottom: 15px;
+    z-index: 1;
+    width: 70%;
+    height: 25%;
+    border: 2px solid #404040;
+    border-radius: 10px;
+    background-color: #111;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.download>img{
+    height: 100%;
+}
+.download_text{
+    margin-left: 5%;
+    line-height: 1em;
+}
+.download_text > h1{
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.download_text > h3{
+    font-weight: 300;
+    font-size: .9em;
+    color: #0071eb;
+}
+
+.download::after{
+    width: 3em;
+    height: 3em;
+    content: '';
+    display: block;
+    background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif") center center no-repeat;
+    background-size: 100%;
+    z-index: 2;
+    position: absolute;
+    right: 10px;
+    
+}
+
+.section-question{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.question{
+    width: 100%;
+    margin: 5px 0;
+    font-weight: 100;
+    display: inline-block;
+    align-items: center;
+    cursor:pointer;
+    
+}
+.question h2{
+    font-weight: 200;
+}
+.question-text{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+    background-color: rgb(49, 43, 43);
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.section-question h1{
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+.h2-var{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: 100;
+}
+.question-desc{
+    display: none;
+    opacity: 0;
+    background: rgb(49, 43, 43);
+    padding: 40px 30px;
+    position: relative;
+    border-top:2px solid black;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+}
+.BsPlus{
+    font-size: 1.5em;
+    transition: all 0.5s ease-in-out;
+}
+.question:focus .BsPlus{
+    transform: rotate(40deg);
+}
+.question:focus{
+    pointer-events:none;
+}
+
+.question:focus .question-desc{
+    opacity: 1;
+    display: block;
+
+}
+.question:focus .question-text{
+    cursor: pointer;
+}
+
+.questions_card .card_story{ 
+    grid-template-columns: 1fr;
+}
+
+/*Footer*/
+.footer{
+    grid-template-columns: 1fr;
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin:auto;
+}
+ul{
+    width: 100%;
+}
+.footer__rows{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.footer__row{
+    width: 25%;
+}
+li{
+    margin: 10px 0;
+    list-style: none;
+    color: rgb(92, 88, 88);
+}
+.single{
+    margin:20px 0;
+    font-size: 1.2em;
+}
+.footer__row li a{
+    font-size: .8em;
+}
+li a{
+    text-decoration: none;
+    color: rgb(92, 88, 88);
+    
+}
+li a:hover{
+    text-decoration: underline;
+    color: rgb(92, 88, 88);
+}
+@media(max-width:800px){
+    .footer__row{
+        width: 50%;
+    }
+}
+@media(max-width:500px){
+    .footer__row{
+        width: 100%;
+    }
+}
+
+
+.sign__in{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 50px 70px;
+    width: 450px;
+    background-color: #111;
+    position: relative;
+}
+.sign__in h2{
+    font-size: 2em;
+}
+.sign__in form *{
+    margin-top: 20px;
+}
+
+.sign__in form{
+    display: flex;
+    flex-direction: column;
+}
+.sign__in form input[type="text"], input[type="password"]{
+    padding: 10px 20px;
+    font-size: 1em;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333333;
+    color:#fff
+
+}
+
+.sign__in form button{
+    background-color: #f51b0b;
+    color: #FFF;
+    outline: none;
+    border:none;
+    padding:10px;
+    border-radius: 5px;
+    font-size: 1em;
+    height: 50px;
+    margin-top: 40px;
+    cursor:pointer;
+}
+.signIn__text{
+    color: #646060;
+    position: relative;
+    top: -20px;
+}
+.sign__in form p{
+    display: inline;
+    float: right;
+    cursor: pointer;
+}
+
+.sign__up{
+    color:#646060;
+}
+.sign__up span{
+    color: #fff;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.sign__up span:hover{
+    text-decoration: underline;
+}
+
+.info i{
+    cursor: pointer;
+    font-size: 1.5em;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+}
+.info:hover ~ .info__message{
+    opacity: 1;
+    top: 100px;
+}
+.info__message{
+    
+    position: absolute;
+    top: 500px;
+    opacity: 0;
+    left: 0;
+    padding: 50px;
+    background-color: #111;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+@media(max-width:950px){
+    .loginScreen_body >h1{
+        font-size: 2rem;
+    }
+    .card_story{
+        grid-template-columns: 1fr;
+    }
+    .card_text{
+        text-align: center;
+        grid-area: 1/1;
+    }
+}
