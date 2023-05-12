@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [Netflix Clone](https://netflix-clone-b2767.web.app/)
 
+![GIF Live Demo](https://github.com/mjcornelio/netflix-clone/blob/main/public/livedemo.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -47,6 +49,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-![GIF Live Demo](https://github.com/mjcornelio/netflix-clone/blob/main/public/livedemo.gif)
+
 
 
